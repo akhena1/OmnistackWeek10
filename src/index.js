@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const routes = require('./routes');
 
 const app = express();
 
@@ -8,7 +9,9 @@ mongoose.connect('mongodb+srv://DevTestServer:1234@cluster0-yaai8.mongodb.net/we
     useUnifiedTopology: true
 });
 
+app.use(routes);
 app.use(express.json());
+
 
 // Métodos HTTP : get, post, put, delete
 
@@ -20,8 +23,5 @@ app.use(express.json());
 
 // MongoDB (Banco de dados não-relacional)
 
-app.get('/users', (req, res) => {
-    return res.json({ message: 'Hello Omnistack' });
-});
 
 app.listen(3333);
