@@ -9,8 +9,8 @@ mongoose.connect('mongodb+srv://DevTestServer:1234@cluster0-yaai8.mongodb.net/we
     useUnifiedTopology: true
 });
 
-app.use(routes);
 app.use(express.json());
+app.use(routes);
 
 
 // Métodos HTTP : get, post, put, delete
