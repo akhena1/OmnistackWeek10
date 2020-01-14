@@ -1,5 +1,6 @@
 const axios = require('axios');
-const Dev = require('../models/Dev')
+const Dev = require('../models/Dev');
+const parseStringAsArray = require('../utils/parseStringAsArray')
 
 
 //Funções padrão de uma controller
@@ -24,7 +25,7 @@ module.exports = {
 
             const { name = login, avatar_url, bio } = apiResponse.data;
 
-            const TechsArray = techs.split(',').map(techs => techs.trim());
+            const TechsArray = parseStringAsArray(techs);
 
             const location = {
                 type: 'Point',
