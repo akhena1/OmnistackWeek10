@@ -45,5 +45,24 @@ module.exports = {
 
 
         return res.json(dev);
+    },
+    async update(req, res) {
+
+
+ 
+        const devUpdate = await Dev.findOneAndUpdate({ 
+            github_username: req.params.id 
+        }, 
+            req.body );
+
+        return res.json(req.body);
+        
+    },
+    async destroy(req, res){
+
+        await Dev.find({ github_username: req.params.id}).remove()
+
+        return res.json({message: "Excluido com sucesso"})
+        
     }
 }
