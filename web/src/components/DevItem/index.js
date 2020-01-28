@@ -14,13 +14,12 @@ function DevItem(props) {
 
       <header>
 
-        <div className="separatorDiv">
           <img src={dev.avatar_url} alt={dev.name}></img>
           <div className="user-info">
             <strong>{dev.name}</strong>
             <span>{dev.techs.join(', ')}</span>
           </div>
-        </div>
+
       </header>
 
       <p>{dev.bio}</p>

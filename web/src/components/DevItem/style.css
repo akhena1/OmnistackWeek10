@@ -9,14 +9,13 @@ li.dev-item header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
-li.dev-item header div img {
+li.dev-item header  img {
     width: 54px;
     height: 54px;
     border-radius: 50% ;
 }
-li.dev-item header div .user-info{
+li.dev-item header  .user-info{
     margin-left: 10px;
     
 }
