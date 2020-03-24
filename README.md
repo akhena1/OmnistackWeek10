@@ -9,6 +9,10 @@
 
 - [NodeJS](https://nodejs.org/en/)
 
+- [Express](https://expressjs.com/pt-br/)
+
+- [Nodemon](https://nodemon.io/)
+
 - [ReactJS](https://github.com/facebook/react)
 
 - [React Native](https://github.com/facebook/react-native)
