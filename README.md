@@ -15,7 +15,7 @@
 
 - [Expo](https://github.com/expo/expo)
 
-- [WebSockets com socket.io](https://socket.io/)
+- WebSockets com [socket.io](https://socket.io/)
 
 - [Axios](https://github.com/axios/axios)
 
